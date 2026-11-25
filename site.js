@@ -40,19 +40,16 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 
 const photographs = {
   apartment: [
-    ['apartment-living.jpg', 'Cream sectional and low rounded table in the apartment living room'],
-    ['apartment-kitchen.jpg', 'Oak cabinetry and a long island in the apartment kitchen'],
-    ['apartment-dining.jpg', 'Oak dining chairs beside floor-to-ceiling windows'],
+    ['conversation.jpg', 'Sculptural seating in a sunken living room'],
+    ['conversation-detail.jpg', 'Red travertine, walnut and ivory upholstery in detail'],
   ],
   bath: [
-    ['bath-vanity.jpg', 'Floating timber vanity and backlit mirror in a stone bathroom'],
-    ['bath-detail.jpg', 'Close-up of the basin, polished tap and illuminated stone backsplash'],
-    ['bath-shower.jpg', 'Walk-in shower with a glass screen, large-format stone and a rainfall showerhead'],
+    ['stone.jpg', 'Veined marble and bronze fittings in a bathing room'],
+    ['stone-detail.jpg', 'A bronze tap over a carved marble basin'],
   ],
   clinic: [
-    ['clinic-lounge.jpg', 'Daylit clinic lounge with pale sofas, a white table and green accents'],
-    ['clinic-desk.jpg', 'Stone reception desk in the dental clinic'],
-    ['clinic-seating.jpg', 'Waiting area with timber-framed seats and a daylit view'],
+    ['arrival.jpg', 'Timber and stone in a boutique reception lounge'],
+    ['arrival-detail.jpg', 'A leather lounge chair against warm timber paneling'],
   ],
 };
 

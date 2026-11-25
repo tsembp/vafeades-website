@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap');
 
 :root {
   --ink: #211d17;
@@ -10,8 +10,8 @@
   --line: #29221830;
   --inverse-line: #f4f0e83d;
   --page: clamp(1.25rem, 5vw, 5rem);
-  --serif: 'Instrument Serif', Georgia, serif;
-  --sans: Manrope, 'Segoe UI', sans-serif;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Instrument Sans', 'Segoe UI', sans-serif;
   --ease: cubic-bezier(.22,.65,.28,1);
 }
 
@@ -154,3 +154,46 @@ button { color: inherit; font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Slatted daylight moves once across the room as the name rises into view. */
+.hero-inner { align-items: end; min-height: max(36rem, 96svh); padding-bottom: clamp(5rem, 10vh, 8rem); }
+.hero-copy { max-width: none; }
+.hero h1 { overflow: hidden; font-size: clamp(4rem, 14vw, 15rem); line-height: 1.08; letter-spacing: -.055em; }
+.hero .wordmark { width: fit-content; font-family: var(--sans); color: #fff4df; font-weight: 400; }
+.hero-location { margin: 0; color: #f4e6d2; }
+.hero-link { min-height: 2.75rem; margin-top: 1rem; border: 0; border-bottom: 1px solid var(--gold); padding: .4rem 0; }
+.hero-link:hover { background: transparent; color: var(--gold); }
+.header .brand img { width: 3rem; height: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy, .hero-scene { animation: none; }
+  .hero-scene::before {
+    content: ''; position: absolute; z-index: 1; inset: -15%;
+    background: repeating-linear-gradient(102deg, transparent 0 4.5%, #21170ed9 5% 9%);
+    pointer-events: none; animation: louver-light 1.8s var(--ease) both;
+  }
+  .hero .wordmark { animation: name-reveal 1.35s .12s var(--ease) both; }
+  .hero-image { animation: zoom-room 24s linear both; }
+}
+@keyframes louver-light {
+  from { opacity: .86; transform: translateX(-5%); }
+  to { opacity: 0; transform: translateX(6%); }
+}
+@keyframes name-reveal {
+  from { opacity: 0; transform: translateY(60%); letter-spacing: -.025em; }
+  to { opacity: 1; transform: translateY(0); letter-spacing: -.055em; }
+}
+@keyframes zoom-room { from { transform: scale(1); } to { transform: scale(1.13); } }
+
+
+@media (max-width: 42rem) {
+  .hero h1 { font-size: clamp(4rem, 22vw, 9rem); }
+  .hero-scene::after { background: linear-gradient(180deg, #17130f95, transparent 32%, #17130f52 58%, #17130fe6); }
+}
+
+.room-study { background: #e5ded2; }
+.room-study .section { padding-bottom: clamp(2rem, 4vw, 4rem); }
+.room-replay { min-height: 2.75rem; padding: .5rem 0; color: var(--ink); border: 0; border-bottom: 1px solid currentColor; background: transparent; cursor: pointer; }
+.room-replay:hover { color: #715640; }
+#room-model { display: block; width: 100%; height: clamp(17rem, 48vw, 43rem); }
+@media (prefers-reduced-motion: reduce) { .room-replay { display: none; } }
+@media (max-width: 42rem) { .hero h1 { font-size: clamp(3.5rem, 19vw, 8rem); } }

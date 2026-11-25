@@ -9,13 +9,13 @@
   <link rel="icon" href="assets/mark.png" type="image/png">
   <link rel="stylesheet" href="style.css">
   <script src="site.js" defer></script>
+  <script src="room.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header shell" id="top">
     <a class="brand" href="#top" aria-label="M. Vafeades Interior Design home">
       <img src="assets/mark.png" width="42" height="38" alt="">
-      <span>M. Vafeades <small>Interior Design</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
     <nav id="navigation" aria-label="Main navigation">
@@ -28,13 +28,13 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-scene">
-        <img class="hero-image" src="assets/hero.jpg" alt="" fetchpriority="high">
+        <img class="hero-image" src="assets/conversation.jpg" alt="" fetchpriority="high">
       </div>
       <div class="hero-inner shell">
         <div class="hero-copy">
           <p class="hero-location">Interior design studio in Nicosia</p>
-          <h1 id="hero-title"><span>Let’s create</span><span>the art we live in</span></h1>
-          <a class="hero-link" href="#work">Explore the work</a>
+          <h1 id="hero-title"><span class="wordmark">Vafeades</span></h1>
+          <a class="hero-link" href="#work">Explore interiors</a>
         </div>
         <span class="image-credit">Concept visualization</span>
       </div>
@@ -42,34 +42,43 @@
 
     <section class="work shell section" id="work" aria-labelledby="work-title">
       <div class="section-head" data-reveal>
-        <h2 id="work-title">Selected work</h2>
-        <p>Residential &amp; commercial interiors</p>
+        <h2 id="work-title">Interior studies</h2>
+        <p>Concept visualizations</p>
       </div>
       <div class="projects">
         <article class="project project-lead" data-reveal>
-          <a class="project-link" href="assets/apartment-living.jpg" data-gallery="apartment">
-            <div class="project-image"><img src="assets/apartment-living.jpg" alt="Cream sectional sofa and a low rounded table in an oak-lined apartment" width="242" height="320" loading="lazy"></div>
-            <div class="project-caption"><div><h3>The YM Apartment</h3><p>Residential</p></div><span class="plus" aria-hidden="true"></span></div>
+          <a class="project-link" href="assets/conversation.jpg" data-gallery="apartment">
+            <div class="project-image"><img src="assets/conversation.jpg" alt="Sculptural seating in a warm, sunken living room" width="1536" height="1024" loading="lazy"></div>
+            <div class="project-caption"><div><h3>Conversation room</h3><p>Residential</p></div><span class="plus" aria-hidden="true"></span></div>
           </a>
         </article>
         <article class="project" data-reveal>
-          <a class="project-link" href="assets/bath-vanity.jpg" data-gallery="bath">
-            <div class="project-image"><img src="assets/bath-vanity.jpg" alt="Floating timber vanity and a softly backlit mirror in a stone bathroom" width="239" height="320" loading="lazy"></div>
-            <div class="project-caption"><div><h3>Stone &amp; Light</h3><p>Bathroom interiors</p></div><span class="plus" aria-hidden="true"></span></div>
+          <a class="project-link" href="assets/stone.jpg" data-gallery="bath">
+            <div class="project-image"><img src="assets/stone.jpg" alt="Veined marble and bronze fittings in a bathing room" width="1536" height="1024" loading="lazy"></div>
+            <div class="project-caption"><div><h3>Stone bath</h3><p>Bathroom interiors</p></div><span class="plus" aria-hidden="true"></span></div>
           </a>
         </article>
         <article class="project" data-reveal>
-          <a class="project-link" href="assets/clinic-lounge.jpg" data-gallery="clinic">
-            <div class="project-image"><img src="assets/clinic-lounge.jpg" alt="Daylit clinic lounge with pale sofas, a white table and green accents" width="239" height="320" loading="lazy"></div>
-            <div class="project-caption"><div><h3>Dental Studio</h3><p>Commercial interior</p></div><span class="plus" aria-hidden="true"></span></div>
+          <a class="project-link" href="assets/arrival.jpg" data-gallery="clinic">
+            <div class="project-image"><img src="assets/arrival.jpg" alt="Timber and stone in a boutique reception lounge" width="1536" height="1024" loading="lazy"></div>
+            <div class="project-caption"><div><h3>Arrival lounge</h3><p>Hospitality</p></div><span class="plus" aria-hidden="true"></span></div>
           </a>
         </article>
       </div>
     </section>
 
+    <section class="room-study" aria-labelledby="room-heading">
+      <div class="shell section">
+        <div class="section-head">
+          <h2 id="room-heading">Room composition</h2>
+          <button id="room-replay" class="room-replay" type="button" hidden>Replay arrangement</button>
+        </div>
+        <canvas id="room-model" role="img" aria-label="An architectural model of a modern lounge. A woven rug, ivory sofa, brass lamp, saddle leather chair and travertine table settle into place."></canvas>
+      </div>
+    </section>
     <section class="studio" id="studio" aria-labelledby="studio-title">
       <div class="studio-inner shell section">
-        <figure class="studio-photo" data-reveal><img src="assets/timber-detail.jpg" alt="Custom timber shelving with diagonal joinery and recessed ceiling lighting" width="239" height="320" loading="lazy"></figure>
+        <figure class="studio-photo" data-reveal><img src="assets/studio-detail.jpg" alt="An arrangement of stone, walnut, glass and linen samples" width="1536" height="1024" loading="lazy"></figure>
         <div class="studio-copy" data-reveal>
           <h2 id="studio-title">The studio</h2>
           <p>Led by Manos Vafeades in Nicosia, the studio designs homes and commercial interiors around how people use them.</p>
