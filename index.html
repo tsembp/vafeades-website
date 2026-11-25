@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="M. Vafeades Interior Design is a Nicosia studio led by Manos Vafeades. Explore residential and commercial interiors and get in touch.">
+  <meta name="theme-color" content="#171511">
+  <title>M. Vafeades — Interior Design</title>
+  <link rel="icon" href="assets/mark.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header shell" id="top">
+    <a class="brand" href="#top" aria-label="M. Vafeades Interior Design home">
+      <img src="assets/mark.png" width="42" height="38" alt="">
+      <span>M. Vafeades <small>Interior Design</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a class="nav-contact" href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-scene">
+        <img class="hero-image" src="assets/hero.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <p class="hero-location">Interior design studio in Nicosia</p>
+          <h1 id="hero-title"><span>Let’s create</span><span>the art we live in</span></h1>
+          <a class="hero-link" href="#work">Explore the work</a>
+        </div>
+        <span class="image-credit">Concept visualization</span>
+      </div>
+    </section>
+
+    <section class="work shell section" id="work" aria-labelledby="work-title">
+      <div class="section-head" data-reveal>
+        <h2 id="work-title">Selected work</h2>
+        <p>Residential &amp; commercial interiors</p>
+      </div>
+      <div class="projects">
+        <article class="project project-lead" data-reveal>
+          <a class="project-link" href="assets/apartment-living.jpg" data-gallery="apartment">
+            <div class="project-image"><img src="assets/apartment-living.jpg" alt="Cream sectional sofa and a low rounded table in an oak-lined apartment" width="242" height="320" loading="lazy"></div>
+            <div class="project-caption"><div><h3>The YM Apartment</h3><p>Residential</p></div><span class="plus" aria-hidden="true"></span></div>
+          </a>
+        </article>
+        <article class="project" data-reveal>
+          <a class="project-link" href="assets/bath-vanity.jpg" data-gallery="bath">
+            <div class="project-image"><img src="assets/bath-vanity.jpg" alt="Floating timber vanity and a softly backlit mirror in a stone bathroom" width="239" height="320" loading="lazy"></div>
+            <div class="project-caption"><div><h3>Stone &amp; Light</h3><p>Bathroom interiors</p></div><span class="plus" aria-hidden="true"></span></div>
+          </a>
+        </article>
+        <article class="project" data-reveal>
+          <a class="project-link" href="assets/clinic-lounge.jpg" data-gallery="clinic">
+            <div class="project-image"><img src="assets/clinic-lounge.jpg" alt="Daylit clinic lounge with pale sofas, a white table and green accents" width="239" height="320" loading="lazy"></div>
+            <div class="project-caption"><div><h3>Dental Studio</h3><p>Commercial interior</p></div><span class="plus" aria-hidden="true"></span></div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio-inner shell section">
+        <figure class="studio-photo" data-reveal><img src="assets/timber-detail.jpg" alt="Custom timber shelving with diagonal joinery and recessed ceiling lighting" width="239" height="320" loading="lazy"></figure>
+        <div class="studio-copy" data-reveal>
+          <h2 id="studio-title">The studio</h2>
+          <p>Led by Manos Vafeades in Nicosia, the studio designs homes and commercial interiors around how people use them.</p>
+          <div class="services">
+            <details><summary>Concept &amp; materials</summary><p>Moodboards, material selections and 3D renders give the space a clear direction before work begins.</p></details>
+            <details><summary>Technical design</summary><p>Construction drawings, scopes of work and tender documents translate the design into buildable details.</p></details>
+            <details><summary>Site supervision</summary><p>Site visits and meetings help keep decisions coordinated as the work takes shape.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="shell section">
+        <div class="contact" data-reveal>
+          <div><h2>Let’s talk about<br>your space</h2><a class="contact-link" href="mailto:manosvafeades@gmail.com">Email the studio</a></div>
+          <address>
+            <a href="tel:+35799678678">+357 99 678678</a>
+            <a href="mailto:manosvafeades@gmail.com">manosvafeades@gmail.com</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Markou+Botsari+13+Agioi+Omologites+Nicosia+1080+Cyprus">13 Markou Botsari, Agioi Omologites<br>Nicosia 1080, Cyprus</a>
+            <a href="https://www.instagram.com/m.vafeades_interior_design/">Instagram</a>
+          </address>
+        </div>
+        <div class="footer-bar"><a class="brand" href="#top" aria-label="M. Vafeades Interior Design, back to top"><img src="assets/mark.png" width="32" height="29" alt=""><span>M. Vafeades <small>Interior Design</small></span></a><a href="#top">Back to top</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <dialog class="gallery" aria-labelledby="gallery-title">
+    <div class="gallery-top"><h2 id="gallery-title"></h2><button class="gallery-close" type="button" aria-label="Close gallery">Close</button></div>
+    <div class="gallery-stage"><img class="gallery-photo" alt=""></div>
+    <div class="gallery-controls"><button class="gallery-prev" type="button">Previous</button><span class="gallery-count" aria-live="polite"></span><button class="gallery-next" type="button">Next</button></div>
+  </dialog>
+</body>
+</html>
